@@ -1,0 +1,44 @@
+/*
+- identify the top 5 skills most frequently mentioned in job postings:
+- use a subquery to find the highest counts in the skills_job_dim table
+- then join the results with the skills_dim table to get the name
+
+-- without a subquery
+SELECT
+    sd.skills,
+    COUNT(sjd.*) AS Number_of_Skills
+FROM
+    skills_job_dim sjd
+LEFT JOIN
+    skills_dim sd USING(skill_id)
+GROUP BY
+    sd.skills
+ORDER BY 
+    Number_of_Skills DESC
+LIMIT 5;
+*/
+
+-- with. subquery
+
+
+SELECT
+    sd.skills AS Skills,
+    top_skills.number_of_skills AS Number_of_Skills
+FROM 
+    (
+    SELECT
+        skill_id,
+        COUNT(*) AS number_of_skills
+    FROM
+        skills_job_dim
+    GROUP BY
+        skill_id
+    ORDER BY
+        number_of_skills DESC
+    LIMIT 5
+    ) AS top_skills
+
+LEFT JOIN 
+    skills_dim sd USING (skill_id)
+ORDER BY
+    Number_of_Skills DESC;
