@@ -3,6 +3,7 @@
 - use a subquery to find the skill IDs with the highest counts in the skills_job_dim 
 table and then join this result with the skills_dim table to get the skills names
 
+-- with. subquery
 
 SELECT
     sd.skills,
@@ -24,6 +25,23 @@ LEFT JOIN
     skills_dim sd USING (skill_id)
 ORDER BY 
        top_skills.skill_count DESC;
+
+
+
+-- without a subquery
+
+SELECT
+    sd.skills,
+    COUNT(sjd.*) AS Number_of_Skills
+FROM
+    skills_job_dim sjd
+LEFT JOIN
+    skills_dim sd USING(skill_id)
+GROUP BY
+    sd.skills
+ORDER BY 
+    Number_of_Skills DESC
+LIMIT 5;  
 
 
 - Determine the size category (sm, med, lrg) for each company by first identifying
