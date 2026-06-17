@@ -112,7 +112,7 @@ ORDER BY
 LIMIT 5;
  
  
-  find the count of the number of remote job postings per skill
+Find the count of the number of remote job postings per skill
  - display the top 5 skills by their demand in remote jobs
  - include skill id, name, and count of potings requiring the skill
 
