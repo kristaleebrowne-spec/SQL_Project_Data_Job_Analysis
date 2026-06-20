@@ -256,7 +256,7 @@ favouring professionals with a blend of **cloud, visualization, programming, and
 <br>
 
 ![Top Skills by Salary](assets/query_4.png)
-*Treemap visualizing the top 25 highest-paying skills for Data Analysts in Canada, based on average annual salaries from 2023 job postings. Based on SQL query results, visualized in Excel.*
+*Treemap visualizing the top 25 highest-paying skills for Data Analysts in Canada, based on average annual salaries from 2023 job postings. Based on SQL query results, visualized in Tableau.*
 
 <br>
 
