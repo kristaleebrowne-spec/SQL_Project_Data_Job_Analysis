@@ -18,7 +18,6 @@ WHERE
     job_title_short = 'Data Analyst' 
     AND salary_year_avg IS NOT NULL
     AND job_country = 'Canada'
-    -- AND job_work_from_home = TRUE
 GROUP BY
     sd.skills
 ORDER BY

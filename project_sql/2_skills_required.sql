@@ -9,24 +9,24 @@ helps job seekers understand which skills to develop that align with the top sal
 -- CTE for top-paying jobs
 
 WITH top_paying_jobs AS ( 
-        SELECT
-            job_id,
-            job_title,
-            job_title_short,
-            name AS company_name,
-            job_location,
-            job_country,
-            salary_year_avg
-        FROM
-            job_postings_fact
-        LEFT JOIN company_dim USING (company_id)
-        WHERE
-            job_country = 'Canada' 
-            AND job_title_short = 'Data Analyst'
-            AND salary_year_avg IS NOT NULL
-        ORDER BY
-            salary_year_avg DESC
-        LIMIT 10
+      SELECT
+          job_id,
+          job_title,
+          job_title_short,
+          name AS company_name,
+          job_location,
+          job_country,
+          salary_year_avg
+      FROM
+          job_postings_fact
+      LEFT JOIN company_dim USING (company_id)
+      WHERE
+          job_country = 'Canada' 
+          AND job_title_short = 'Data Analyst'
+          AND salary_year_avg IS NOT NULL
+      ORDER BY
+          salary_year_avg DESC
+      LIMIT 10
 )
 
 -- main query

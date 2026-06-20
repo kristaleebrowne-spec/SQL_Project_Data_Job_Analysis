@@ -4,7 +4,7 @@ in job postings for Data Analysts
 - this is a longer version using a CTE - NOT USING
 */
 
--- CTE to find top 5 skills listed for remote data analysts
+-- CTE to find top 5 skills listed for data analysts in Canada
 
 WITH top_five_skills AS (
     SELECT
