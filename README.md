@@ -328,25 +328,19 @@ This analysis explored the Canadian Data Analyst job market by examining salary 
 
 From the analysis, several general insights emerged:
 
-1. **Top Ranking Data Anaylist Jobs** 
-<br>
+1. **Top Ranking Data Anaylist Jobs:** 
 The highest paying jobs for Data Analysts in Canada offer a salary range between **$100K** and **$160K**.
 
-2. **Skills Required for these Top Ranking Jobs**
-<br>
+2. **Skills Required for these Top Ranking Jobs:**
 High paying Data Analyst jobs require an advance proficiency in **SQL** and **Python**, suggesting they are critical skills for earning a top salary.
 
-3. **Most In-Demand Skills for Data Analysts**
-<br>
+3. **Most In-Demand Skills for Data Analysts:**
 **SQL** is the most in-demand skill in the Data Analyst job market, making it essential for job seekers.
 
-4. **Skills Associated with High Salary Jobs**
-<br>
+4. **Skills Associated with High Salary Jobs:**
 Specialized skills, such as **Looker**, **Snowflake** and **RedShift**, are associated with the highest average annual salaries, indicating a niche expertise.
 
-5. **Optimal Skills to Learn for Data Analysts**
-<br>
-**SQL** leads in demand and offers a high average salary, positioning it as one of the most optimal skills for Data Analysts to learn to maximize their marker value.
+5. **Optimal Skills to Learn for Data Analysts: SQL** leads in demand and offers a high average salary, positioning it as one of the most optimal skills for Data Analysts to learn to maximize their marker value.
 
 <br>
 
