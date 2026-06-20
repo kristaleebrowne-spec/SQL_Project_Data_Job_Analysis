@@ -345,3 +345,5 @@ Specialized skills, such as **Looker**, **Snowflake** and **RedShift**, are asso
 <br>
 
 This analysis highlights that success as a Data Analyst depends on developing a well-rounded technical skill set, with **SQL emerging as the strongest overall skill** due to its combination of high demand and competitive earning potential. Together with Python and Tableau, these skills provide the greatest market value for aspiring Data Analysts looking to maximize both employability and long-term salary potential.
+
+<br>
