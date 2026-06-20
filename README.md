@@ -211,8 +211,8 @@ This query highlight all skills listed for these top-pay Data Analyst jobs:
 
 <br>
 
-![In-demand Skills](assets/query_3.png)
-*Bar chart visualizing the most in-demand technical skills for Data Analysts in Canada, based on the frequency each skill appears in 2023 job postings. Based on SQL query results, visualized in Excel.*
+![In-demand Skills](assets/query_3-a.png)
+*Bar chart visualizing the most in-demand technical skills for Data Analysts in Canada, based on the frequency each skill appears in 2023 job postings. Based on SQL query results, visualized in Tableau.*
 
 <br>
 
