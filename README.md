@@ -73,7 +73,7 @@ What skills are most valuable for aspiring Data Analysts? This project uses SQL 
 <br>
 
 ![Top Paying Rolls](assets/query_1.png)
-*Bar chart visualizing the average annual salaries of the top 10 highest-paying Data Analyst positions in Canada. Based on SQL query results, visualized in Excel.*
+*Bar chart visualizing the average annual salaries of the top 10 highest-paying Data Analyst positions in Canada. Based on SQL query results, visualized in Tableau.*
 
 <br>
 
@@ -133,7 +133,7 @@ This query highlight all skills listed for these top-pay Data Analyst jobs:
 <br>
 
 ![Skills Required](assets/query_2.png)
-*Bar chart visualizing the top technical skills required for the top-paying Data Analyst positions in Canada. Based on SQL query results, visualized in Excel using Pivot Table values.*
+*Bar chart visualizing the top technical skills required for the top-paying Data Analyst positions in Canada. Based on SQL query results, visualized in Tableau.*
 
 <br>
 
