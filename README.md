@@ -203,9 +203,9 @@ This query highlight all skills listed for these top-pay Data Analyst jobs:
 ```
 #### Here is a breakdown of the most in-demand skills for Data Analyst in Canada in 2023:
 
-- **SQL** emerged as the most in-demand skill, appearing in **1,247** Data Analyst job postings, over **60%** more frequently than the next most requested skill, **Excel (767)**.
+- **SQL** emerged as the most in-demand skill, appearing in **1,247** job postings. It represented **31%** of the total mentions across the top five most-requested skills.
 
-- **Programming and visualization tools** remain highly valued, with **Python (761), Tableau (592)**, and **Power BI (503)** consistently appearing across job postings.
+- **Programming and visualization tools** remain highly valued, with **Python** represnting **25%** of the total mentions (761 job postings), and **Tableau** at **18%** (592 job postings).
 
 - The results suggest employers prioritize a combination of database querying, spreadsheet analysis, programming, and data visualization skills, highlighting the importance of a well-rounded technical skill set.
 
@@ -220,7 +220,7 @@ This query highlight all skills listed for these top-pay Data Analyst jobs:
 
 I analyzed the average annual salary associated with each skill by joining multiple tables to retrieve skill names and filtering for Canadian Data Analyst positions. I then limited the results to the top 25 skills by highest average salary.
 
-This query highlight top skills for Data Analysts based on average annual salary:
+This query highlights top skills for Data Analysts based on average annual salary:
 
 ```sql
 
@@ -303,7 +303,9 @@ This query highlights the most valuable skills for Data Analysts by combining sk
 <br>
 
 ![Optimal Skills](assets/query_5.png)
-*Scatterplot visualizing the correlation between skill demand and average annual salaries for Data Analysts in Canada, based on 2023 job postings. Based on SQL query results, visualized in Tableau.*
+*Scatterplot with a trend line visualizing the correlation between skill demand and average annual salaries for Data Analysts in Canada, based on 2023 job postings. Based on SQL query results, visualized in Tableau.*
+
+<br>
 
 ![Optimal Skills](assets/query_5-a.png)
 *SQL query results listing Data Analyst skills by demand count, with corresponding average annual salary.*
@@ -332,10 +334,10 @@ From the analysis, several general insights emerged:
 The highest paying jobs for Data Analysts in Canada offer a salary range between **$100K** and **$160K**.
 
 2. **Skills Required for these Top Ranking Jobs:**
-High paying Data Analyst jobs require an advance proficiency in **SQL** and **Python**, suggesting they are critical skills for earning a top salary.
+High-paying Data Analyst roles consistently require advanced proficiency in **SQL (22% occurrence)** and **Python (19% occurrence)**, making them the most critical technical skills for securing top-paying positions.
 
 3. **Most In-Demand Skills for Data Analysts:**
-**SQL** is the most in-demand skill in the Data Analyst job market, making it essential for job seekers.
+**SQL** is the most in-demand skill in the Data Analyst job market, making it essential for job seekers, with **31%** of the total job posting mentions.
 
 4. **Skills Associated with High Salary Jobs:**
 Specialized skills, such as **Looker**, **Snowflake** and **RedShift**, are associated with the highest average annual salaries, indicating a niche expertise.

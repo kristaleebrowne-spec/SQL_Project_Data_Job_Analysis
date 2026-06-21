@@ -63,6 +63,10 @@ WHERE -- bc we want the highest denand count from the average salary order by
 ORDER BY -- will run first listed
     hss.average_salary DESC,
     hds.demand_count DESC;
+
+
+- there are a lot of NULLS in the average yearly salary data,
+which limits the number of postings
 */
 
 
@@ -87,8 +91,10 @@ HAVING
     COUNT(sjd.skill_id) >= 5
 ORDER BY -- will run first listed
     average_salary DESC,
-    demand_count DESC
-LIMIT 25;
+    demand_count DESC;
+
+
+
 
 
 
