@@ -1,4 +1,4 @@
-/*
+
 Question: What are the most optimal skills to learn? 
 -Optimal = High demand AND High paying
 -We can combine what we have found in query 3 and 4 which is:
@@ -12,7 +12,7 @@ for data analysts
 
 WITH high_demand_skills AS (
     SELECT
-        sjd.skill_id,
+        sd.skill_id,
         sd.skills,
         COUNT(*) AS demand_count
     FROM
@@ -22,10 +22,11 @@ WITH high_demand_skills AS (
     WHERE
         job_title_short = 'Data Analyst' 
         AND salary_year_avg IS NOT NULL
-        AND job_country = 'Canada'
+        -- AND job_country = 'Canada'
+        AND job_work_from_home = TRUE
     GROUP BY
-        sjd.skill_id,
-        sd.skills
+        sd.skills,
+        sd.skill_id
 ),
 
     high_salary_skills AS (
@@ -40,7 +41,8 @@ WITH high_demand_skills AS (
     WHERE
         job_title_short = 'Data Analyst' 
         AND salary_year_avg IS NOT NULL
-        AND job_country = 'Canada'
+        -- AND job_country = 'Canada'
+        AND job_work_from_home = TRUE
     GROUP BY
         sjd.skill_id,
         sd.skills
@@ -59,15 +61,16 @@ FROM
 INNER JOIN -- bc we only care about what exists in these 2 tables
     high_salary_skills hss ON hds.skill_id = hss.skill_id 
 WHERE -- bc we want the highest denand count from the average salary order by
-    hds.demand_count >= 5
+    hds.demand_count >= 10
 ORDER BY -- will run first listed
     hss.average_salary DESC,
-    hds.demand_count DESC;
+    hds.demand_count DESC
+LIMIT 25;
+    
 
 
-- there are a lot of NULLS in the average yearly salary data,
-which limits the number of postings
-*/
+-- there are a lot of NULLS in the average yearly salary data, which limits the number of postings
+
 
 
 -- same query, re-written more concisely
@@ -90,8 +93,13 @@ GROUP BY
 HAVING
     COUNT(sjd.skill_id) >= 5
 ORDER BY -- will run first listed
-    average_salary DESC,
-    demand_count DESC;
+    demand_count DESC,
+    average_salary DESC;
+
+
+
+
+
 
 
 

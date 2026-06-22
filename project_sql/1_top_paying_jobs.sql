@@ -20,7 +20,7 @@ LEFT JOIN
     company_dim cd USING (company_id)
 WHERE
     job_country = 'Canada' 
-    AND job_title_short = 'Data Analyst' 
+    AND job_title_short = 'Data Analyst'
     AND salary_year_avg IS NOT NULL
 ORDER BY
     salary_year_avg DESC
